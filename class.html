@@ -118,6 +118,12 @@
 </head>
 
 <body>
+    If (document.referrer==='') {
+        document.open();
+        document.write('<strong>Please do not directly visit this site</strong>');
+        document.close();
+    }
+
 <div class="box">
     <div class="main">
         <div id="temp" class="part" style="display: none;">
