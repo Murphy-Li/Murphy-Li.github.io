@@ -39,7 +39,7 @@
             font-size: 2em;
             margin: 0.67em 0;
         }
-        #uname,#pwd{
+        #uname,#pwd,#name{
             width: 278px;
             height: 18px;
             margin-bottom: 10px;
@@ -69,6 +69,11 @@
             border-radius: 5px;
             margin: 0;
         }
+
+        .warning {
+            color: red;
+        }
+        
     </style>
 </head>
 <body>
@@ -78,10 +83,14 @@
         <!-- <label for="username">用户名</label> -->
         <input type="text" id="uname" value="" placeholder="用户名"/><br>
         <input type="password" id="pwd" value="" placeholder="密码"/><br>
+        <input type="text" id="name" value="" placeholder="姓名"/><br>
         <input type="submit" id="but" value="登录" onclick="return checkuser()"/>
         <!-- 返回了true就会打开页面  -->
     </form>
 </div>
+
+<p class="warning"><h1>不要尝试黑进服务器</h1></p>
+<p class="warning"><h2>因为里面什么都没有</h2></p>
 </body>
 
 <script type="text/javascript">
